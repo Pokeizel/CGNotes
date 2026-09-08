@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Compilers and Interpreters</title>
+    <link rel="icon" type="image/x-icon" href="assets/notebook.ico">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="../index.html">Compilers and Interpreters</a></h1>
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                <details open>
+                    <summary>2026/08/06</summary>
+                    <ul>
+                        <li><a href="peternaur.html">Peter Naur</a></li>
+                        <li><a href="bigfour.html">The Big Four</a>
+                            <ul>
+                                <li><a href="fortran.html">FORTRAN</a></li>
+                                <li><a href="lisp.html">LISP</a></li>
+                                <li><a href="cobol.html">COBOL</a></li>
+                                <li><a href="algol.html">ALGOL</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="vonNeumannArchitecture.html">von Neumann Architecture</a></li>
+                        <li><a href="reminders.html">Reminders</a></li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>von Neumann Architecture</h2>
+            <h3>CPU</h3>
+            <p>The Central Processing Unit executes programs, makes calculations, and has fast registers. Moore's Law says that the number of transistors in a circuit or CPU doubles every two years. It is composed of a Control Unit and an Arithmetic Logic Unit.</p>
+            <div class="subcard">
+                <h4>Control Unit</h4>
+                <p>It's in charge of executing the 
+                <span class="keyword">
+                    fetch cycle</span>:
+                </p>
+                <ol>
+                    <li>Retrieve instruction from memory using the Program Counter.</li>
+                    <li>Update the Program Counter.</li>
+                    <li>Decode instruction.</li>
+                    <li>Decode arguments.</li>
+                    <li>Execute instruction.</li>
+                    <li>Check for interrupt signals (different from system calls).</li>
+                    <li>Go to 1.</li>
+                </ol>
+                <p>It establishes the computer architecture.</p>
+                <div class="comment">
+                    <p>Note: "computer architecture" is interchangeable with "machine language".</p>
+                </div>
+                <p>There are two basic design possibilities: hardwired or microprogrammed.</p>
+                <div class="card">
+                    <h5>Hardwired Timing and Control Unit</h5>
+                    <p>It's implemented with logic gates: each machine language instruction has corresponding circuits.</p>
+                    <p>It's faster and more efficient than microprogrammed CUs, but they're barely or not at all flexible.</p>
+                </div>
+            </div>
+            <div class="image-frame">
+                <img src="assets/Von-Neumann-Architecture.jpg" width="54%">
+                <p>Simple diagram of the von Neumann Architecture.</p>
+            </div>
+            <br>
+            <a href="reminders.html">==> Reminders</a><br>
+            <br>
+            <a href="bigfour.html">Go Back</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

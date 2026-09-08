@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Introduction to Computer Graphics</title>
+    <link rel="icon" type="image/x-icon" href="/assets/notebook.ico">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/">Introduction to Computer Graphics</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open>
+                    <summary>2026/09/03</summary>
+                    
+                    <ul> <li><a href="/posts/2026-09-03/polygon_rotation/">Polygon Rotation Around an Anchor</a></li> </ul> 
+                    
+                    <ul> <li><a href="/posts/2026-09-03/combining_geometric_trans/">Combining Geometric Transformations</a></li> </ul> 
+                    
+                    <ul> <li><a href="/posts/2026-09-03/homogeneous_coordinates/">Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/posts/2026-09-03/geometric_transformations_with_hc/">Geometric Transformations with Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/posts/2026-09-03/matrix_to_transformation/">Matrix to Transformation</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width=100% src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Combining Geometric Transformations</h2>
+            <p>Performing operations one after another can be costly, specially with polygons of many points. Fortunately, scale and rotation both involve linear transformations between matrices, so, <img height="21px" src="https://cdn3.emoji.gg/emojis/1685-nerd.png"> <i>by the associative property of matrix multiplication</i>, they can be calculated together before multiplying the point vector with the result and we can <a target="_blank" href="https://youtu.be/6ERddYRZU0E?t=60">save dort processing time</a>.<br>
+<br>
+An example: we want to scale a scene with a gazillion points and then rotate it. Instead of computing the same operation for all gazillion points, we calculate the products of transformation first, and then multiply that result with each point. It's still around 4 gazillion operations, but it's much better than 8 gazillion, which is how many it would take without this optimization.<br>
+<br>
+What about translations, though? Can they join the optimization club along with scale and rotation, or are they not cool enough? Since a translation does not involve a matrix multiplication, it can't be easily lumped together with the rest of operations to calculate beforehand. For that, we'll have to take a different approach.<br>
+<br>
+<a href="/posts/2026-09-03/homogeneous_coordinates">==&gt; Homogeneous Coordinates</a><br>
+<br>
+<a href="/posts/2026-09-03/polygon_rotation">Go Back</a></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
