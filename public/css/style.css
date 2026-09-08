@@ -1,0 +1,160 @@
+:root {
+  --background-color: #9797976a;
+  --primary-color: #000500c4;
+  --secondary-color: #362417b3;
+  --highlight-color: #92817ad6;
+  --link-color: #E1DC53;
+  --special-color: #F1DABF;
+  --text-color: #FFFBFF;
+
+  --default-margin: 8px;
+  --default-wide-margin: 12px;
+  --default-secondary-margin: 4px;
+  --default-border-radius: 4px;
+}
+
+html {
+    background: url("/CGNotes/assets/bg.webp") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: serif;
+    color: var(--text-color);
+    text-shadow: 3px 4px #00000030;
+    
+    min-height: 100%;
+    text-align: justify;
+    text-justify: inter-word;
+
+    cursor: url("/CGNotes/assets/fun-cats/Cat 1.cur") 0 0, auto;
+}
+
+iframe {
+    overflow: hidden;
+}
+
+ul {
+    margin: auto;
+    padding-left: 32px;
+    text-align: left;
+}
+
+h1 {
+    color: var(--special-color);
+    margin: var(--default-margin);
+}
+
+h2 {
+    color: var(--text-color);
+    margin: var(--default-margin);
+}
+
+h2.icon {
+  display: flex;
+  align-items: flex-end;
+}
+
+h3 {
+    color: var(--text-color);
+    margin: var(--default-margin);
+}
+
+p {
+    margin: var(--default-secondary-margin);
+}
+
+a {
+    color: var(--link-color);
+    cursor: url("/CGNotes/assets/fun-cats/Cat 4.cur") 0 0, help;
+}
+
+details > summary {
+    cursor: url("/CGNotes/assets/fun-cats/Cat 4.cur") 0 0, help;
+}
+
+a.secret_link {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: url("/CGNotes/assets/secret-cursor.png"), help;
+}
+
+a.alt_link {
+    color: var(--special-color);
+}
+
+img.inline-image {
+  display: inline;
+  filter: drop-shadow(3px 4px  #00000030);
+  margin-right: 14px;
+  height: 32px;
+}
+
+.keyword {
+    color:var(--special-color)
+}
+
+.sheet {
+    display: flex;
+    width: 816px;
+    height: 1056px;
+    background-color: var(--background-color);
+    margin: auto;
+}
+
+.left-menu {
+    display: flex;
+    width: 30%;
+    margin: var(--default-margin);
+    margin-right: var(--default-secondary-margin);
+}
+
+.right-menu {
+    width: 70%;
+    margin: var(--default-margin);
+    margin-left: var(--default-secondary-margin);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-color: var(--special-color) rgba(0, 0, 0, 0.0);
+}
+
+.card {
+    background-color: var(--primary-color);
+    padding: var(--default-margin);
+    border-radius: var(--default-border-radius);
+}
+
+.subcard {
+    background-color: var(--secondary-color);
+    padding: var(--default-margin);
+    border-radius: var(--default-border-radius);
+    margin-top: var(--default-margin);
+}
+
+.comment {
+    background-color: var(--highlight-color);
+    color: var(--text-color);
+    padding: var(--default-margin);
+    border-radius: var(--default-border-radius);
+    margin-top: var(--default-margin);
+    margin-bottom: var(--default-margin);
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 0px #00000030;
+}
+
+.image-frame {
+    margin: var(--default-wide-margin);
+    padding: var(--default-margin);
+    color: var(--text-color);
+    background-color: var(--highlight-color);
+    border-radius: var(--default-border-radius);
+    border-width: px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+}
+
+.image-frame > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
