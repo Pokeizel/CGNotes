@@ -14,7 +14,7 @@
 }
 
 html {
-    background: url("/assets/bg.webp") no-repeat center center fixed;
+    background: url("/CGNotes/assets/bg.webp") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +27,7 @@ html {
     text-align: justify;
     text-justify: inter-word;
 
-    cursor: url("/assets/fun-cats/Cat 1.cur") 0 0, auto;
+    cursor: url("/CGNotes/assets/fun-cats/Cat 1.cur") 0 0, auto;
 }
 
 iframe {
@@ -66,17 +66,17 @@ p {
 
 a {
     color: var(--link-color);
-    cursor: url("/assets/fun-cats/Cat 4.cur") 0 0, help;
+    cursor: url("/CGNotes/assets/fun-cats/Cat 4.cur") 0 0, help;
 }
 
 details > summary {
-    cursor: url("/assets/fun-cats/Cat 4.cur") 0 0, help;
+    cursor: url("/CGNotes/assets/fun-cats/Cat 4.cur") 0 0, help;
 }
 
 a.secret_link {
     color: var(--text-color);
     text-decoration: none;
-    cursor: url("/assets/secret-cursor.png"), help;
+    cursor: url("/CGNotes/assets/secret-cursor.png"), help;
 }
 
 a.alt_link {
