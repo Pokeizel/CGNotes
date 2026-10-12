@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Introduction to Computer Graphics</title>
+    <link rel="icon" type="image/x-icon" href="/CGNotes/CGNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/CGNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/CGNotes/">Introduction to Computer Graphics</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/09/03</summary>
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/polygon_rotation/">Polygon Rotation Around an Anchor</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/combining_geometric_trans/">Combining Geometric Transformations</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/homogeneous_coordinates/">Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/geometric_transformations_with_hc/">Geometric Transformations with Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/matrix_to_transformation/">Matrix to Transformation</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/06</summary>
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/scenes/">Scenes</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/sphere/">Spheres</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/sphere_intersection/">Sphere Intersection</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/raytracer/">A Basic-A** Ray Tracer</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Scenes</h2>
+            <p>Scenes are collections that include, at least, objects, observers, and scene parameters.<br>
+Objects are usually described by a mathematical model (points that make up a sphere, box, plane, cone, torus, polygon...), ideally with an implicit function. An object that can be described with boolean operations between primitive shapes is what's known as Constructive Solid Geometry.<br>
+Observers include the &quot;eye&quot; position and the projection pane.<br>
+There are countless scene parameter that affect how the scene is rendered, such as lighting, resolution, fog, materials, roughness, field of view, just to name a few...</p>
+<div class="image-frame">
+    <img src="/CGNotes/assets/objectlinkedlist.png" width="100%"><br>
+    <p>Diagram of possible data structure for objects in a scene.</p>
+</div>
+<p>To implement a scene in somewhere like C, where rights regarding object orientation are nonexistent, we can create some abstractions freely by exploiting some legal loopholes.<br>
+We can use a linked list to store objects, but the data type the list will handle will be a &quot;neutral&quot; type. All shapes share some obligatory data, such as a shape and perhaps a color. They all should have a method to calculate intersections with them, but since these methods vary greatly between shapes, we can have a function pointer to some method that deals with that. Any additional data the shape needs to exist (for example, radius, depth, height...) can live in a &quot;private data&quot; field.<br>
+To decide which color is used for a pixel in the framebuffer, intersections with ALL objects in the scene and the ray cast from the eye need to be calculated at least once per pixel. This is of course very slow, and it's usually where most of the processing time is spent.<br>
+Some intersection calculations are not trivial (such as the torus's), and some are <i>ad hoc</i> methods, or &quot;chancletazos&quot;.</p>
+<div class="image-frame">
+    <img src="https://media1.tenor.com/m/2vUcqblf1RcAAAAC/cat-kitten.gif" height="240px">
+</div>
+<p><a href="/CGNotes/posts/2026-10-06/sphere">==&gt; Spheres</a></p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

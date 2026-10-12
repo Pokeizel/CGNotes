@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <title>Introduction to Computer Graphics</title>
+    <link rel="icon" type="image/x-icon" href="/CGNotes/CGNotes/assets/notebook.ico">
+    <link rel="stylesheet" href="/CGNotes/css/style.css">
+</head>
+
+<body>
+<div class="sheet">
+    <div class="left-menu">
+        <div class="card">
+            <h1><a href="/CGNotes/">Introduction to Computer Graphics</a></h1>
+            <img src="https://www.cameronsworld.net/img/ui/catscape-loader.gif">
+            <p>Notes by <a class="secret_link" href="https://pokeizel.itch.io/" target="_blank">Aradia Aguilar-Vargas</a></p>
+            <div class="subcard">
+                
+                <details open="">
+                    <summary>2026/09/03</summary>
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/polygon_rotation/">Polygon Rotation Around an Anchor</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/combining_geometric_trans/">Combining Geometric Transformations</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/homogeneous_coordinates/">Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/geometric_transformations_with_hc/">Geometric Transformations with Homogeneous Coordinates</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-09-03/matrix_to_transformation/">Matrix to Transformation</a></li> </ul> 
+                    
+                </details>
+                
+                <details open="">
+                    <summary>2026/10/06</summary>
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/scenes/">Scenes</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/sphere/">Spheres</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/sphere_intersection/">Sphere Intersection</a></li> </ul> 
+                    
+                    <ul> <li><a href="/CGNotes/posts/2026-10-06/raytracer/">A Basic-A** Ray Tracer</a></li> </ul> 
+                    
+                </details>
+                
+            </div>
+            <img width="100%" src="https://web.archive.org/web/20090903064746im_/http://geocities.com/x3cats/Images/tabchase.gif">
+        </div>
+    </div>
+
+    <div class="right-menu">
+        <div class="card">
+            <h2>Sphere Intersection</h2>
+            <p>I got lazy for this page...<br>
+I promise I won't get lazy for the next page.</p>
+<div class="image-frame">
+    <img src="/CGNotes/assets/spheredefinition.png" width="100%"><br>
+    <p>Equation for points in a sphere.</p>
+</div>
+<div class="image-frame">
+    <img src="/CGNotes/assets/spheremath.png" width="100%"><br>
+    <p>Expansion of the sphere equation substituting x, y, and z with the parametric forms of the eye position and direction.</p>
+</div>
+Rearranging this a bit and simplifying, we reach the form t^2a + tb + c, where...
+<div class="image-frame">
+    <img src="/CGNotes/assets/sphereintersection.png" width="100%"><br>
+    <p>Parts of the new quadratic equation.</p>
+</div>
+The discriminant (b^2 - 4c) gives us the following information: if it's negative, there are no intersections; if it's equal to 0, there's exactly 1 intersection; if it's positive, there are 2 intersections. This means t can have 0, 1, or 2 real solutions, which represent the distance to the intersection points with the sphere.<br>
+We now have most of the information we need to build our first basic raytracer!!!<br>
+<br>
+<a href="/CGNotes/posts/2026-10-06/raytracer">==> A Basic-A** Ray Tracer</a><br>
+<br>
+<a href="/CGNotes/posts/2026-10-06/sphere">Go Back</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
